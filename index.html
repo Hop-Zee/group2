@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fried Rice Tutorial</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fried Rice Tutorial</h1>
+    </header>
+    <main>
+        <!-- Description Section -->
+        <section>
+            <h2>About This Project</h2>
+            <p><strong>What we Made:</strong> This tutorial teaches viewers how to cook delicious fried rice with vegetables, using simple steps and engaging multimedia content.</p>
+            <p><strong>Why We Made It:</strong> Fried rice is a universal dish that’s both easy to make and enjoyable. I wanted to help learners develop cooking skills while having fun in the kitchen.</p>
+            <p><strong>How We Made It:</strong> I created a video tutorial, designed an infographic, and included a feedback form for users to share their creations. This project applies multimedia principles like cognitive load theory to make learning easy and enjoyable.</p>
+        </section>
+
+        <!-- Tutorial Section -->
+        <section>
+            <h2>Fried Rice Tutorial</h2>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 cups of cooked rice</li>
+                <li>1 cup of mixed vegetables (carrots, peas, corn)</li>
+                <li>2 eggs</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>1 clove of garlic, minced</li>
+            </ul>
+            <h3>Steps</h3>
+            <ol>
+                <li>Prepare your ingredients: chop vegetables, cook the rice if not already done.</li>
+                <li>Heat a pan and scramble the eggs. Set aside.</li>
+                <li>Stir-fry the vegetables with garlic until tender.</li>
+                <li>Add the rice and soy sauce, mixing everything well.</li>
+                <li>Stir in the scrambled eggs. Cook for another 2 minutes and serve!</li>
+            </ol>
+            <h3>Infographic</h3>
+            <img src="infographic.png" alt="Fried Rice Infographic">
+            <h3>Video Tutorial</h3>
+            <video controls>
+                <source src="fried_rice_tutorial.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Feedback Section -->
+        <section>
+            <h2>Share Your Results and Feedback</h2>
+            <p>We’d love to see your fried rice creations! Share a photo or video and let us know if the tutorial was helpful.</p>
+            <form id="feedbackForm" enctype="multipart/form-data">
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="file-upload">
+                    <label for="file">Upload Photo or Video</label>
+                    <input type="file" id="file" name="file" accept="image/*,video/*">
+                    <div class="error" id="fileError"></div>
+                </div>
+                <div>
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="5" placeholder="Was the tutorial clear and helpful? Share your thoughts!"></textarea>
+                    <div class="error" id="feedbackError"></div>
+                </div>
+                <button type="button" onclick="validateForm()">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fried Rice Tutorial | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
