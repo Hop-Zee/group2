@@ -39,22 +39,6 @@ function validateForm() {
     if (!feedback) {
         document.getElementById('feedbackError').innerText = 'Feedback is required.';
         isValid = false;
-    }
-
-    // Submit the form if valid
-    if (isValid) {
-        db.collection("feedbacks").add({
-            name: name,
-            email: email,
-            feedback: feedback,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        }).then(() => {
-            alert("Feedback submitted successfully!");
-            document.getElementById("feedbackForm").reset();
-        }).catch((error) => {
-            console.error("Error submitting feedback: ", error);
-            alert("An error occurred. Please try again.");
-        });
-    }
+    }   
 
 }
