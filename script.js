@@ -58,18 +58,3 @@ function validateForm() {
     }
 
 }
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyC_Vf6FlHWQR8Yzo3Qt0opwjuNXE9J_qbQ",
-    authDomain: "group-2-7dea4.firebaseapp.com",
-    projectId: "group-2-7dea4",
-    storageBucket: "group-2-7dea4.firebasestorage.app",
-    messagingSenderId: "494990664818",
-    appId: "1:494990664818:web:17f12aff4ef22981ef8eeb",
-    measurementId: "G-6D5FL059CY"
-  };
-
-  // Initialize Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-  const auth = firebase.auth();
