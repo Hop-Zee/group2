@@ -73,3 +73,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.center-grid {
+    display: grid;
+    place-items: center; /* Center horizontally and vertically */
+    height: 100vh;
+}
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
