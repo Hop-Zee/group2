@@ -75,8 +75,7 @@ a:hover {
 }
 .center-grid {
     display: grid;
-    place-items: center; /* Center horizontally and vertically */
-    height: 100vh;
+    place-items: center;
 }
 iframe {
     width: 560px;
