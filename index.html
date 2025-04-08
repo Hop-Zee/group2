@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrepEats</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script defer src="script.js"></script>
-    <script src="sw.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepEats</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script defer src="script.js"></script>
+  <script src="sw.js"></script>
 </head>
 <body>
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar">
-        <div class="logo">Prep<span>Eats</span></div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#insights">Insights</a></li>
-            <li><a href="#tutorial">Tutorial</a></li>
-            <li><a href="#feedback">Feedback</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">Prep<span>Eats</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#tutorial">Tutorial</a></li>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
 
-    <!-- ===== HEADER ===== -->
-    <header id="home">
-        <h1>How to Prepare Fried Rice With Vegetables</h1>
-    </header>
+  <!-- ===== HEADER ===== -->
+  <header id="home">
+    <h1>How to Prepare Fried Rice With Vegetables</h1>
+  </header>
 
-    <!-- ===== MAIN CONTENT ===== -->
-    <main>
-        <!-- Detailed Insights Section -->
-        <section id="insights" class="section">
-            <h2>Detailed Insights</h2>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- Detailed Insights Section -->
+    <section id="insights" class="section"><h2>Detailed Insights</h2>
             <h3>Learning Outcomes</h3>
             <p>This tutorial aims to teach learners how to prepare fried rice with vegetables while developing essential cooking and multimedia learning skills. The specific outcomes include:</p>
             <ul>
@@ -93,12 +93,10 @@
                 <li><strong>Time Management:</strong> Following the segmented tutorial helps learners plan their cooking process efficiently.</li>
                 <li><strong>Problem-Solving:</strong> Handling unexpected cooking challenges (e.g., adjusting seasoning) fosters adaptability.</li>
                 <li><strong>Feedback Skills:</strong> Evaluating their results and sharing constructive feedback encourages critical thinking and communication.</li>
-            </ul>
-        </section>
+            </ul></section>
 
-        <!-- Tutorial Section -->
-        <section id="tutorial" class="section">
-            <h2>Tutorial</h2>
+    <!-- Tutorial Section -->
+    <section id="tutorial" class="section"><h2>Tutorial</h2>
             <h3>Ingredients</h3>
             <ul>
                 <li>2 cups of cooked rice</li>
@@ -124,12 +122,16 @@
             <!-- Video Placeholder -->
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/k3NPaMDzRXg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
+            </div></section>
 
-        <!-- Feedback Section -->
-        <section id="feedback" class="section">
-            <h2>Share Your Results and Feedback</h2>
+    <!-- ===== EXPLORE SECTION ===== -->
+    <section id="explore" class="explore-section">
+      <h2>More Recipes & Tutorials</h2>
+      <p>Hungry for more? Discover additional cooking guides, tips, and step-by-step tutorials that take your skills to the next level. Stay tuned as we continue to expand our library of delicious content.</p>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section"><h2>Share Your Results and Feedback</h2>
             <p>We’d love to see your fried rice creations! Share a photo or video and let us know if the tutorial was helpful.</p>
             <form id="feedbackForm" enctype="multipart/form-data">
                 <div class="form-group">
@@ -153,13 +155,18 @@
                     <div class="error" id="feedbackError"></div>
                 </div>
                 <button type="button" onclick="validateForm()">Submit</button>
-            </form>
-        </section>
-    </main>
+            </form></section>
+  </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>&copy; 2025 <span>PrepEats</span> | All Rights Reserved</p>
-    </footer>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 <span>PrepEats</span> | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
