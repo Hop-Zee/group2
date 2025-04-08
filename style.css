@@ -1,5 +1,5 @@
  * {
-      margin: 100;
+      margin: 10;
       padding: 10;
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
@@ -10,7 +10,7 @@
       line-height: 1.6;
     }
     .container {
-      max-width: 1024px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 2rem 1rem;
     }
