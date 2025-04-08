@@ -86,6 +86,8 @@
     }
     img.infographic {
       width: 100%;
+      max-height: 600px; /* Limit height */
+      object-fit: cover; /* Crop nicely */
       border-radius: 0.5rem;
       margin-top: 1rem;
     }
