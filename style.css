@@ -68,6 +68,9 @@
     .section {
       margin-bottom: 3rem;
     }
+    h1 {
+      text-align: center;
+    }
     h2 {
       font-size: 2rem;
       text-align: center;
